@@ -14,4 +14,4 @@ $ css
 
 # Deployment
 
-$ Live site Link :  https://neon-souffle-2d1ccd.netlify.app/
+$ Live site Link :  https://neon-souffle-2d1ccd.netlify.app
