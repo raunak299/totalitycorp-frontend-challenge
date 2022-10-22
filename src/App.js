@@ -1,24 +1,31 @@
-import logo from './logo.svg';
+
 import './App.css';
+import Categories from './components/Categories/Categories';
+import Footer from './components/Footer/Footer';
+import Hero from './components/Hero/Hero';
+import Trending from './components/Trending/Trending';
+import React, { useState } from 'react';
+import Navbar from './components/Navbar/Navbar';
+import Cart from './components/Cart/Cart';
 
 function App() {
+
+  const [isMenuOpen, setMenu] = useState(false);
+  const [cartTrigger,setCartTrigger] = useState(false);
+ 
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <React.Fragment>
+    {(isMenuOpen || cartTrigger ) && <div className='app-overlay'></div> }
+    <Navbar isMenuOpen={isMenuOpen} setCartTrigger={setCartTrigger} cartTrigger={cartTrigger} setMenu={setMenu}/>
+    <div className={`App ${ (isMenuOpen || cartTrigger) ? 'menu-active' : ''}`}>
+      <Hero isMenuOpen={isMenuOpen}/>
+      <Trending />
+      <Categories/>
+      <Footer/>
     </div>
+    {cartTrigger && <Cart setCartTrigger={setCartTrigger} cartTrigger={cartTrigger}/> }
+    </React.Fragment>
   );
 }
 

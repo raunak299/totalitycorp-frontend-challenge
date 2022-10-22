@@ -1,0 +1,26 @@
+.navigation-links{
+     display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+.navigation-links i{
+    padding-right: .6rem;
+    margin-left: .9rem;
+    font-size: 1.1rem;
+    color: #102a42;
+     font-size: 1.5rem;
+}
+
+
+
+
+@media(min-width:700px){
+   .navigation-links i:nth-child(1){
+    display:none;
+   }
+
+   
+}
