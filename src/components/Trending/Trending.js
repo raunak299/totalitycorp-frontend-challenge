@@ -23,7 +23,7 @@ function Trending(){
                       {trending.position}
                     </div>
                     <div>
-                   <img src={trending.image} alt='img'/>     
+                   <img src={trending.image} alt='img' loading='lazy'/>     
                     </div>
                    <div className={styles['trending-details']}>
                        <div>{trending.title}</div>

@@ -21,7 +21,7 @@ function Categories(){
       <div className={styles['categories-container']}>
         { categoriesData.map( (category)=> (
               <div className={styles['categories-card']} key={category.image}>
-                    <img src={category.image} alt={category.title}></img>
+                    <img src={category.image} alt={category.title} loading='lazy'></img>
                     <div>{category.title}</div>
               </div>
          ))}

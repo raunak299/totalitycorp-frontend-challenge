@@ -40,7 +40,7 @@ function Explore(props){
               <button onClick={prevHandler}><i className="fa-solid fa-greater-than" onClick={prevHandler}></i></button>
         {newArr.slice(0,props.noOfSlides).map((explore)=>(
              <div className={styles['explore-card']} key={explore.title}>
-                <img src={explore.image}  className={styles['explore-card']} alt='img'>
+                <img src={explore.image}  className={styles['explore-card']} alt='img' loading='lazy'>
                 </img>
                 <div>{explore.title}</div>
              </div> 
