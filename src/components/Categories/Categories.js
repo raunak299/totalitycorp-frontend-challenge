@@ -27,6 +27,7 @@ function Categories(){
          ))}
       </div>
       </div>
+      // <div></t add div>
   );
 
 }
