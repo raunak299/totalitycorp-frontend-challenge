@@ -1,6 +1,6 @@
 # How to install and run locally
 
-$ git clone https://github.com/raunak299/totalitycorp-frontend-challenge.git /n
+$ git clone https://github.com/raunak299/totalitycorp-frontend-challenge.git 
 $ cd totalitycorp-frontend-challenge
 $ npm install
 $ npm start
